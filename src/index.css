@@ -21,22 +21,22 @@ p {
     font-family: 'Lato',sans-serif;
 }
 
-input[id="file"] {
-    font-size: 20px;
-    font-family: 'Lato',sans-serif;
-    border-radius: 25px;
-    background: #73AD21;
-    padding: 20px;
-    width: 600px;
-}
+/*input[id="file"] {*/
+/*    font-size: 20px;*/
+/*    font-family: 'Lato',sans-serif;*/
+/*    border-radius: 25px;*/
+/*    background: #73AD21;*/
+/*    padding: 20px;*/
+/*    width: 600px;*/
+/*}*/
 
-input[id="submit"] {
-    font-size: 20px;
-    font-family: 'Lato',sans-serif;
-    border-radius: 25px;
-    background: #73AD21;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+/*input[id="submit"] {*/
+/*    font-size: 20px;*/
+/*    font-family: 'Lato',sans-serif;*/
+/*    border-radius: 25px;*/
+/*    background: #73AD21;*/
+/*    padding-top: 20px;*/
+/*    padding-bottom: 20px;*/
+/*    padding-left: 50px;*/
+/*    padding-right: 50px;*/
+/*}*/
