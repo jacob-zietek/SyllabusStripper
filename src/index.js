@@ -38,7 +38,7 @@ function dotdotdot() {
     }
 
 }
-
+// fetch submits a http request
 function log() {
     document.getElementById("confirm").style.display = "block"
     document.getElementById("confirm2").style.display = "block"

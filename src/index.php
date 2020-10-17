@@ -19,7 +19,6 @@
         </form>
     </div>
 
-
     <h1>Syllabus Stripper</h1>
     <p id="desc">Syllabus Stripper is inspired by that annoying ritual we all do at the beginning of the semester of setting up our calendar.<br><br> We hate it, so do you.<br><br> Syllabus Stripper is here to expedite that process. </p>
 
@@ -47,7 +46,7 @@
 
 <!--end of overlays-->
 
-
+<!--<img id = "image" src="../res/students.jpg">-->
 
 
 
