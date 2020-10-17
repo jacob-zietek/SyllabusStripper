@@ -88,12 +88,42 @@ for i in range(len(dates)):
 
 # Initializes calendar class. Full documentation can be found here:
 # https://icalendar.readthedocs.io/en/latest/usage.html
-# !!! Note must include 
+# !!! Note must include description and start time at least
 
 cal = Calendar()
 
+for i in range(len(dates)):
+    event = Event() # Starts a new event
+    dateComponents = str(dates[i]).split("-")
+    year = int(dateComponents[0])
+    month = int(dateComponents[1])
+    day = int(dateComponents[2][:2])
+    #print(dates[i])
+    #print(day)
+    timeComponents = str(dates[i]).split(":")
+    hour = int(timeComponents[0][11:])
+    minutes = int(timeComponents[1])
+    seconds = int(timeComponents[2])
+    #print(hour)
+    
+    # Formats date and time into something usable for event
+    
+    event.add('dtstart', datetime(year, month, day, hour, minutes, seconds))
+    
+    # Adds description
+    
+    event.add('summary', descriptions[i])
+    
+    # Can add more attributes to every event using afformentioned docs
+    
+    cal.add_component(event) # Writes event to calendar
+    
+    
+# Writes calendar into "example.ics". Change this later, probably
 
-
+f = open(os.path.join('example.ics'), 'wb')
+f.write(cal.to_ical())
+f.close()
 
 
 '''
