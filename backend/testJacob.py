@@ -24,7 +24,7 @@ def is_date(string, fuzzy=False):
         return False
 
 
-filename = 'test.pdf'
+filename = 'ppynd.pdf'
 
 pdfFileObj = open(filename,'rb')
 
