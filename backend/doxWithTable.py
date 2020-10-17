@@ -1,5 +1,6 @@
 from docx import Document
 from dateutil.parser import parse
+from datetime import datetime
 
 def is_date(string, fuzzy=False):
     """
@@ -8,6 +9,7 @@ def is_date(string, fuzzy=False):
     :param string: str, string to check for date
     :param fuzzy: bool, ignore unknown tokens in string if True
     """
+
     try: 
         parse(string, fuzzy=fuzzy)
         return True
@@ -16,8 +18,10 @@ def is_date(string, fuzzy=False):
         return False
 
 
+
+
 # Creates and reads a docx file
-document = Document("demo.docx")
+document = Document("docWithTableTests/cs191.docx")
 
 #Stores rows and columns of a table
 data = []
@@ -42,11 +46,25 @@ for table in document.tables:
 datesArray = []
 
 #Iterates through rows and columns, if it encounters a date, adds it to data array
+
 for i in data:
-    for j in i:
-        try:
-            if(is_date(j)):
-                datesArray.append(i)
-        except ValueError:
+    for j in range(len(i)):
+        #Checks if j is a date and not numeric, used to prevent integers, such as 1, to pass as dates
+        if(is_date(i[j]) and i[j].isnumeric() == False):
+            #Gets sublist from j to the end, ensures that the date will be the first index
+            datesArray.append(i[j:])
+            break
+        #Splits j into a word array seperated by spaces
+        wordArray = i[j].split(" ")
+        for k in wordArray: 
+            #Checks if k is a date and not numeric, used to prevent integers from passing
+            if(is_date(k) and k.isnumeric() == False):
+                #Gets sublist from j to the end, ensures that the date will be the first index
+                datesArray.append((k,) + i[j:])
+                break
+        #Breaks out of inner 2 loops if the prior if statement evaulates
+        else:
             continue
-  
+        break
+
+print("test")
