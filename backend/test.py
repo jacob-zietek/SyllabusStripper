@@ -1,8 +1,22 @@
 import PyPDF2
 import textract
 
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
+from dateutil.parser import parse
+
+def is_date(string, fuzzy=False):
+    """
+    Return whether the string can be interpreted as a date.
+
+    :param string: str, string to check for date
+    :param fuzzy: bool, ignore unknown tokens in string if True
+    """
+    try: 
+        parse(string, fuzzy=fuzzy)
+        return True
+
+    except ValueError:
+        return False
+
 
 filename = 'test.pdf'
 
@@ -23,6 +37,11 @@ while count < num_pages:
 if text != "":
    text = text
 
-text = text.replace('\n',' ').replace('\r','')
+text = text.replace("\r","")
+
+text = text.replace("\n", "")
+
+textArray = text.split("!")
+
 
 print(text);
