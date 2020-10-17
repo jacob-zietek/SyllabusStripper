@@ -1,42 +1,157 @@
-h1 {
-    text-align: center;
-    font-size: 40px;
-    font-family: 'Lato',sans-serif;
+form {
+    text-align : center;
 }
 
-.topbar {
-    background: darkolivegreen;
-    margin: 0px;
-    padding: 0px;
+a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 90px;
+    font-family: 'VALORANT',sans-serif;
+    color: #9460b7;
+    text-shadow: black;
+}
+
+#desc {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gisha',sans-serif;
+    color: #7448b3;
+    font-weight: bold;
+}
+
+#topbar {
+    margin: auto;
+    background-color: #7448b3;
     height: 40px;
     width: 100%;
+    font-size: 20px;
+    margin-inline: auto;
+    align-content: center;
+    text-align: right;
+    font-family: 'Lato',sans-serif;
+    color: white;
+}
+
+#topbar > #aboutus {
+    position: fixed;
+    margin: auto;
+    left: 40%;
+    font-size: 20px;
+    color: white;
+    font-family: 'Lato', sans-serif;
 }
 
 body {
-    background: #bcf7ff;
+    background: #082e32;
 }
 
 p {
     font-size: 20px;
     font-family: 'Lato',sans-serif;
+    color: #7448b3;
 }
 
-/*input[id="file"] {*/
-/*    font-size: 20px;*/
-/*    font-family: 'Lato',sans-serif;*/
-/*    border-radius: 25px;*/
-/*    background: #73AD21;*/
-/*    padding: 20px;*/
-/*    width: 600px;*/
-/*}*/
+#pdfFile {
+    font-size: 20px;
+    padding-left: 80px;
+    font-family: 'Lato',sans-serif;
+    align-content: center;
+    color: #7448b3;
+}
 
-/*input[id="submit"] {*/
-/*    font-size: 20px;*/
-/*    font-family: 'Lato',sans-serif;*/
-/*    border-radius: 25px;*/
-/*    background: #73AD21;*/
-/*    padding-top: 20px;*/
-/*    padding-bottom: 20px;*/
-/*    padding-left: 50px;*/
-/*    padding-right: 50px;*/
-/*}*/
+#submit {
+    font-size: 20px;
+    font-family: 'Lato',sans-serif;
+    text-align: center;
+    align-content: center;
+}
+
+#confirm {
+    font-size: 20px;
+    font-family: 'Lato',sans-serif;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+#confirm2 {
+    font-size: 20px;
+    font-family: 'Lato',sans-serif;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#calendarLink {
+    font-size: 20px;
+    font-family: 'Lato',sans-serif;
+    text-align: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+
+#entertext {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+#overlay1 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+
+}
+
+#overlay2 {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+
+}
+
+#gui{
+    display: inherit;
+    margin: 30px auto;
+    border-radius: 25px;
+    width: 75%;
+    height: 75%;
+    background-color: white;
+    z-index: 3;
+}
+
+a#cancel{
+    margin: 90%;
+    top: 20%;
+    font-size: 40px;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+}
