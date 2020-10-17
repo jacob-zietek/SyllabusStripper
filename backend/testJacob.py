@@ -86,6 +86,7 @@ for i in range(len(dates)):
 # !!! Note: dates now contains the dates in format 'YYYY-MM-DD HH:MM:SS'
 
 
+
 # Initializes calendar class. Full documentation can be found here:
 # https://icalendar.readthedocs.io/en/latest/usage.html
 # !!! Note must include description and start time at least
