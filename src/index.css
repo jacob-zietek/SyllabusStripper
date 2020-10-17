@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lato',sans-serif;
+}
+
+.topbar {
+    background: darkolivegreen;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    width: 100%;
+}
+
+body {
+    background: #bcf7ff;
+}
