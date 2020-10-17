@@ -5,6 +5,10 @@ from dateutil.parser import parse
 
 from datetime import datetime
 
+from icalendar import Calendar, Event
+
+import tempfile, os
+
 def is_date(string, fuzzy=False):
     """
     Return whether the string can be interpreted as a date.
@@ -70,7 +74,8 @@ for i in range(len(datesArray)):
     
 # This cleans up the data a little bit, it removes the end from - onward
 # and replaces it with the current year. This should ensure it works for
-# any semester. 
+# any semester. It then runs it through dateutil's parse function to standardize
+# the layout of the data, it should be 'YYYY-MM-DD HH:MM:SS'
 
 currentYear = datetime.now().year
 
@@ -78,7 +83,26 @@ for i in range(len(dates)):
     dates[i] = dates[i][:dates[i].find('-')] + " " + str(currentYear)
     dates[i] = parse(dates[i])
 
+# !!! Note: dates now contains the dates in format 'YYYY-MM-DD HH:MM:SS'
 
+
+# Initializes calendar class. Full documentation can be found here:
+# https://icalendar.readthedocs.io/en/latest/usage.html
+# !!! Note must include 
+
+cal = Calendar()
+
+
+
+
+
+'''
+Code to write iCal file 
+directory = tempfile.mkdtemp()
+f = open(os.path.join(directory, 'example.ics'), 'wb')
+f.write(cal.to_ical())
+f.close()
+'''
 '''
 # Finds deltas between dates
 for i in range(len(datesArray)-1):
