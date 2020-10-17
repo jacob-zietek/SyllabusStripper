@@ -43,5 +43,20 @@ text = text.replace("\n", "")
 
 textArray = text.split("!")
 
+# Contains tuples of the dates text and where the index of that date 
+# is in textArray to be used for parsing later
+datesArray = []
 
-print(text);
+for i in range(len(textArray)):
+    if is_date(textArray[i]):
+        datesArray.append((textArray[i], i))
+        print(textArray[i]) 
+        
+
+'''
+# Finds deltas between dates
+for i in range(len(datesArray)-1):
+    print(textArray[datesArray[i][1]])
+    print(datesArray[i+1][1] - datesArray[i][1])
+'''
+
