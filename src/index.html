@@ -16,10 +16,16 @@
 
 </head>
 <body>
-    <p>Please Upload Your PDF Below:</p>
-    <form action="/index.php">
-        <input type="file" id="file" name="filename">
-        <input type="submit">
+    <p id="entertext">Please Upload Your PDF Below:</p>
+    <form action="index.php" method="post">
+        <input type="file" id="file" name="upload" accept="application/pdf,application/msword/vnd.openxmlformats-officedocument.wordprocessingml.document">
+
+
+        <input type="submit" id="submit">
     </form>
+
+<!--    <object data="myfile.pdf" type="application/pdf" width="100%" height="100%">-->
+<!--        <p>Alternative text - include a link <a href="myfile.pdf">to the PDF!</a></p>-->
+<!--    </object>-->
 </body>
 </html>
