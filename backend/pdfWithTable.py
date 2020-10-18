@@ -5,6 +5,10 @@ import pandas as pd
 from dateutil.parser import parse
 
 from datetime import datetime
+# This file will be able to take a pdf file and take tables out for 
+# processing later
+
+
 
 import tabula
 
