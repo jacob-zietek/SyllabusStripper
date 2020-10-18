@@ -200,7 +200,7 @@ def convertToICS(datesArray):
             descriptionTotal += str(j) + " "
     
 
-        event.add('summary',descriptionTotal)
+        event.add('summary',descriptionTotal.replace("\n","").replace("\r",""))
     
         # Can add more attributes to every event using afformentioned docs
     
@@ -240,7 +240,6 @@ if __name__ == "__main__":
 
 
     
-
 
 
 
