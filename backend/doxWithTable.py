@@ -58,9 +58,9 @@ def regexGetList(regexArray,assignment,index):
                 for reg in regDate:
                     #if u is 24, it is a date written in Month DD, so it changes that to MM/DD
                     if(u < 24):
-                        return [(parseDate(reg),) + assignment[:index] + assignment[index:]]
+                        return (parseDate(reg),) + assignment[:index] + assignment[index:]
                     elif(is_date(reg)): #Regular Output
-                        return [(reg,) + assignment[:index] + assignment[index:]]
+                        return (reg,) + assignment[:index] + assignment[index:]
     return None
     
 #Multiple Regex Expressions
@@ -68,7 +68,7 @@ def regexGetList(regexArray,assignment,index):
 
 
 # Creates and reads a docx file
-document = Document("docWithTableTests/cs191.docx")
+document = Document("docWithTableTests/412.docx")
 
 #Stores rows and columns of a table
 data = []
@@ -134,7 +134,7 @@ currentYear = datetime.now().year
 for i in range(len(dates)):
     if("-" in dates[i]):
         dates[i] = dates[i].replace("-","/")
-    dates[i] = str(currentYear) + "/" +  dates[i] 
+    dates[i] = str(currentYear) + "/" +  str(dates[i])
     dates[i] = parse(dates[i])
 
 
