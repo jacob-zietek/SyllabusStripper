@@ -392,7 +392,7 @@ def main():
     
     #Gets User Input From Website(Will be edited afterwards)
     # File name will be uploaded_file.pdf or .doc or .docx
-    
+
     onlyfiles = [f for f in listdir("./") if isfile(join("./", f))]
     
     file = None

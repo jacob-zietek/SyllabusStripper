@@ -25,7 +25,7 @@ h1 {
     font-weight: bold;
 }
 
-#topbar {
+.topbar {
     background-color: #7448b3;
     height: 40px;
     width: 100%;
@@ -33,6 +33,7 @@ h1 {
 }
 
 #aboutus {
+    padding-right: 100px;
     text-align: center;
     vertical-align: middle;
     font-size: 200%;
@@ -40,7 +41,8 @@ h1 {
     font-family: 'Lato', sans-serif;
 }
 
-aboutus2 {
+#aboutus2 {
+    padding-right: 10px;
     text-align: center;
     vertical-align: middle;
     font-size: 200%;
@@ -60,7 +62,7 @@ p {
     color: #7448b3;
 }
 
-img {
+students {
     position: fixed;
     min-width: 100%;
     right: 0;
@@ -82,7 +84,6 @@ img {
     text-align : center;
     font-size: 20px;
     font-family: 'Lato',sans-serif;
-    text-align: center;
     align-content: center;
 }
 
@@ -150,6 +151,46 @@ img {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
 
+}
+
+#arjun {
+    padding: 30px;
+    max-width:20%;
+    height:auto;
+    border-radius: 300px;
+    z-index: 5;
+}
+#jacob {
+    padding: 20px;
+    max-width:20%;
+    height:auto;
+    border-radius: 300px;
+    z-index: 5;
+}
+#jeongbin {
+    padding: 20px;
+    max-width:20%;
+    height:auto;
+    border-radius: 300px;
+    z-index: 5;
+}
+
+#bryan {
+    padding: 20px;
+    max-width:20%;
+    height:auto;
+    border-radius: 300px;
+    z-index: 5;
+}
+
+#teamname {
+    text-align: center;
+}
+
+table {
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 1500px;
 }
 
 #gui{

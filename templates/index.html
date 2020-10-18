@@ -12,10 +12,10 @@
             integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossorigin="anonymous"></script>
 
-    <div class = 'topbar' id='topbar'>
-        <form method='post' action='index.php'>
-            <a dir="aboutus.php" id="aboutus" onclick="onAboutUs()"> About Us </a>
-            <a dir="whatthis.php" id="aboutus2" onclick="onWhatThis()"> What's This? </a>
+    <div class="topbar" id="topbar">
+        <form>
+            <a id="aboutus" onclick="onAboutUs()"> About Us </a>
+            <a id="aboutus2" onclick="onWhatThis()"> What's This? </a>
         </form>
     </div>
 
@@ -32,7 +32,12 @@
 <div class = "overlay" id="overlay1">
     <div class = "gui" id = "gui">
         <a name = "cancel" id = "cancel" onclick = "off(); return false" href = "">X</a>
-        <p><b>The Sons of Kedar <br> <br> All other forms of social media are irrelevant, so please follow our LinkedIn accounts!</b></p>
+        <p id="teamname"><b>The Sons of Kedar <br> <br> All other forms of social media are irrelevant, so follow our LinkedIn accounts!</b></p>
+        <img class="pfp" id="arjun" src="../res/Arjun%20Khorana.jpg">
+        <img class="pfp" id="jacob" src="../res/jacob.jpeg">
+        <img class="pfp" id="jeongbin" src="../res/jeongbin.jpg">
+        <img class="pfp" id="bryan" src="../res/bryan.jpg">
+        <table> <tr><th><a href="https://www.linkedin.com/in/arjun-khorana-2642521a3/"><p>Arjun Khorana</p></a></th></th><th><a href = "https://www.linkedin.com/in/jacob-zietek/"><p>Jacob Zietek</p></a></th><th><a href="https://www.linkedin.com/in/jeongbin-lee-a715161b5/"><p>Jeongbin Lee</p></a></th><th><a href="https://www.linkedin.com/in/bryan-yakimisky-7294921b6/"><p>Bryan "Regex" Yakimisky</p></a></th></tr></table>
 
     </div>
     </form>
