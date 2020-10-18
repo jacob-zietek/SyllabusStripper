@@ -26,23 +26,26 @@ h1 {
 }
 
 #topbar {
-    margin: auto;
     background-color: #7448b3;
     height: 40px;
     width: 100%;
-    font-size: 20px;
-    margin-inline: auto;
-    align-content: center;
     text-align: right;
-    font-family: 'Lato',sans-serif;
-    color: white;
 }
 
-#topbar > #aboutus {
+#aboutus {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 200%;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+aboutus2 {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 200%;
     position: fixed;
     margin: auto;
-    left: 40%;
-    font-size: 20px;
     color: white;
     font-family: 'Lato', sans-serif;
 }
@@ -66,7 +69,8 @@ img {
     filter: contrast(75%);
 }
 
-#pdfFile {
+#file {
+    text-align : center;
     font-size: 20px;
     padding-left: 80px;
     font-family: 'Lato',sans-serif;
@@ -75,6 +79,7 @@ img {
 }
 
 #submit {
+    text-align : center;
     font-size: 20px;
     font-family: 'Lato',sans-serif;
     text-align: center;
@@ -82,18 +87,18 @@ img {
 }
 
 #confirm {
+    text-align : center;
     font-size: 20px;
     font-family: 'Lato',sans-serif;
-    text-align: center;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
     display: none;
 }
 #confirm2 {
+    text-align : center;
     font-size: 20px;
     font-family: 'Lato',sans-serif;
-    text-align: center;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -101,9 +106,9 @@ img {
 }
 
 #calendarLink {
+    text-align : center;
     font-size: 20px;
     font-family: 'Lato',sans-serif;
-    text-align: center;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -157,7 +162,25 @@ img {
     z-index: 3;
 }
 
+#gui2{
+    display: inherit;
+    margin: 30px auto;
+    border-radius: 25px;
+    width: 75%;
+    height: 75%;
+    background-color: white;
+    z-index: 3;
+}
+
 a#cancel{
+    margin: 90%;
+    top: 20%;
+    font-size: 40px;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+a#cancel2{
     margin: 90%;
     top: 20%;
     font-size: 40px;

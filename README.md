@@ -34,7 +34,7 @@ We also used widely available Python libraries such as [Insert stuff here] to ma
 [Do later]
 
 ## What we learned
-**Arjun**: 
+**Arjun**: I learned
 
 **Bryan**:  
 
