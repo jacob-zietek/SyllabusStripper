@@ -40,7 +40,7 @@ We also used widely available Python libraries such as [Insert stuff here] to ma
 
 **Jacob**:
 
-**Jeongbin**:
+**Jeongbin**: I leanred how to improve from failures. I have attempted to employ natural language processing, tesnorflow--machine learning, and OCR. Since I am new to coding and there were some descrepancies among our codes, I was able to actually learn how things really work at least in a basic level. Also, I reviewed a bit of python and a way how to integrate the local serval to the python code and the website, using Flask.
 
 
 ## What's next for Syllabus Stripper
