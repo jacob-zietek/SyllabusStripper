@@ -1,200 +1,107 @@
 BEGIN:VCALENDAR
 BEGIN:VEVENT
-SUMMARY:1 8/17 – 8/21 Course Introduction\nClinical Psychology – The B
- asics Course Introduction\nClinical Psychology – The Basics Monday\, Aug
-  17th – Class Welcome Quiz 1 – Ch. 1\nDiscussion Board 1 
-DTSTART;VALUE=DATE-TIME:20200817T115959
+SUMMARY:Syllabus Quiz Sunday\, September 6 @ 11:59pm EST 5 
+DTSTART;VALUE=DATE-TIME:20200906T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:2 8/24 – 8/28 Evolution and History of Clinical Psychology Evolu
- tion and History of Clinical Psychology  Quiz 2 – Ch. 2\nSyllabus Quiz 
-DTSTART;VALUE=DATE-TIME:20200824T115959
+SUMMARY:Academic Honesty Quiz Sunday\, October 4 @ 11:59pm EST 10 
+DTSTART;VALUE=DATE-TIME:20201004T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:3 8/31 –   9/4 Current Controversies Current Controversies Monda
- y\, Aug 31st – Prescription Privileges: Pros and Cons? Quiz 3 – Ch. 3\
- nDiscussion Board 2 
-DTSTART;VALUE=DATE-TIME:20200803T115959
+SUMMARY:Learn to Be Pre-Test Sunday\, September 6 @ 11:59pm EST 3 
+DTSTART;VALUE=DATE-TIME:20200906T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:4 9/7   – 9/11 Cultural Issues Cultural Issues Wednesday\, Sept 
- 9th – Culture in the Therapy Room Exercise  Quiz 4 – Ch. 4\nDiscussion
-  Board 3 
-DTSTART;VALUE=DATE-TIME:20200911T115959
+SUMMARY:Learn to Be Post-Test Sunday\, October 18 @ 11:59pm EST 3 
+DTSTART;VALUE=DATE-TIME:20201018T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:5 9/14 – 9/18 Ethics Ethics Monday\, Sept 14th – What would yo
- u do?  Quiz 5 – Ch. 5\nDiscussion Board 4 
-DTSTART;VALUE=DATE-TIME:20200914T115959
+SUMMARY:Learn to Be Post-Test Sunday\, October 18 @ 11:59pm EST 3 
+DTSTART;VALUE=DATE-TIME:20201001T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:6 9-21 EXAM 1 (Ch. 1\, 2\, 3\, 4\, 5) EXAM 1 (Ch. 1\, 2\, 3\, 4\, 
- 5)  EXAM 1 
-DTSTART;VALUE=DATE-TIME:20200921T115959
+SUMMARY:Learn to Be Capstone Reflection Sunday\, October 18 @ 11:59pm EST 
+ 12 
+DTSTART;VALUE=DATE-TIME:20201018T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:6 9/23 – 9/25 Research Methods Research Methods  Quiz 6 – Ch. 
- 6 
-DTSTART;VALUE=DATE-TIME:20200923T115959
+SUMMARY:Learn to Be Capstone Reflection Sunday\, October 18 @ 11:59pm EST 
+ 12 
+DTSTART;VALUE=DATE-TIME:20201001T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:7 9/28 – 10/2 Diagnosis and Classification Diagnosis and Classif
- ication Monday\, Sept 28th – Normal or Abnormal? Quiz 7 – Ch. 7\nDiscu
- ssion Board 5 
-DTSTART;VALUE=DATE-TIME:20201002T115959
+SUMMARY:BEVI Inventory Assessment Sunday\, September 13 @ 11:59pm EST 3 
+DTSTART;VALUE=DATE-TIME:20200913T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:8 10/5 – 10/9 Clinical Interview Clinical Interview Monday\, Oct
-  5th – Clinical Interview Demo Quiz 8 – Ch. 8 
-DTSTART;VALUE=DATE-TIME:20201005T115959
+SUMMARY:BEVI Inventory Assessment Sunday\, September 13 @ 11:59pm EST 3 
+DTSTART;VALUE=DATE-TIME:20200901T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:9 10/12\n-\n10/14 Assessment: Intelligence/Neuropsych Assessment: 
- Intelligence/Neuropsych Monday\, Oct 11th – Intelligence is a Construct 
- Quiz 9 – Ch. 9\nDiscussion Board 6 
-DTSTART;VALUE=DATE-TIME:20201012T115959
+SUMMARY:Clifton STRENGTHS Assessment Sunday\, September 13 @ 11:59pm EST 3
+  
+DTSTART;VALUE=DATE-TIME:20200913T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: 10/16 NO CLASS (Midterm Break) NO CLASS (Midterm Break) NO CLASS 
- (Midterm Break) NO CLASS (Midterm Break) 
-DTSTART;VALUE=DATE-TIME:20201016T115959
+SUMMARY:Clifton STRENGTHS Assessment Sunday\, September 13 @ 11:59pm EST 3
+  
+DTSTART;VALUE=DATE-TIME:20200901T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:10 10/19 – 10/23 Assessment: Personality/Behavioral Assessment: 
- Personality/Behavioral  Quiz 10 – Ch. 10\nDiscussion Board 7 
-DTSTART;VALUE=DATE-TIME:20201019T115959
+SUMMARY:BEVI Inventory Assignment Sunday\, October 4 @ 11:59pm EST 6 
+DTSTART;VALUE=DATE-TIME:20201004T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:11 10/26 EXAM 2 (Ch. 6\, 7\, 8\, 9\, 10) EXAM 2 (Ch. 6\, 7\, 8\, 9
- \, 10)  EXAM 2 
-DTSTART;VALUE=DATE-TIME:20201026T115959
+SUMMARY:Clifton STRENGTHS Assignment Sunday\, October 4 @ 11:59pm EST 6 
+DTSTART;VALUE=DATE-TIME:20201004T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:11 10/28 – 10/30 General Issues in Psychotherapy General Issues 
- in Psychotherapy Wednesday\, Oct 28th – Are all therapies created equal?
-  Quiz 11 – Ch. 11 
-DTSTART;VALUE=DATE-TIME:20201028T115959
+SUMMARY:Behavioral Interview Preparation Sunday\, September 13 @ 11:59pm E
+ ST 6 
+DTSTART;VALUE=DATE-TIME:20200913T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:12 11/2 – 11/6 Psychodynamic Psychotherapy Psychodynamic Psychot
- herapy  Quiz 12 – Ch. 12\nDiscussion Board 8 
-DTSTART;VALUE=DATE-TIME:20201102T115959
+SUMMARY:Behavioral Interview Preparation Sunday\, September 13 @ 11:59pm E
+ ST 6 
+DTSTART;VALUE=DATE-TIME:20200901T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:13 11/9 – 11/13 Humanistic Psychotherapy Humanistic Psychotherap
- y Monday\, Nov 9th – Humanism – All the Warm Fuzzies Quiz 13 – Ch. 1
- 3\nDiscussion Board 9 
-DTSTART;VALUE=DATE-TIME:20201113T115959
+SUMMARY:Resume/Cover Letter  Sunday\, September 13 @ 11:59pm EST 6 
+DTSTART;VALUE=DATE-TIME:20200913T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:14 11/16 – 11/20 Behavioral/Cognitive & Mindfulness Behavioral/C
- ognitive & Mindfulness Monday\, Nov 16th – CBT/Relaxation Skills Demo Qu
- iz 14 – Pg. 321-331\, 338 & Ch. 15\nDiscussion Board 10 
-DTSTART;VALUE=DATE-TIME:20201116T115959
+SUMMARY:Resume/Cover Letter  Sunday\, September 13 @ 11:59pm EST 6 
+DTSTART;VALUE=DATE-TIME:20200901T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:15 11/23- 11/25 Group Therapy & \nCourse Wrap-Up Group Therapy & \
- nCourse Wrap-Up  Quiz 15 – Pg. 375-384 
-DTSTART;VALUE=DATE-TIME:20201123T115959
+SUMMARY:Career Fair Research Sunday\, September 13 @ 11:59pm EST 6 
+DTSTART;VALUE=DATE-TIME:20200913T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY: 11/27 NO CLASS – Thanksgiving NO CLASS – Thanksgiving   
-DTSTART;VALUE=DATE-TIME:20201127T115959
+SUMMARY:Career Fair Research Sunday\, September 13 @ 11:59pm EST 6 
+DTSTART;VALUE=DATE-TIME:20200901T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:16 11/30- \n12/4 NO CLASS NO CLASS Use this week to work on your p
- apers and study for finals!  
-DTSTART;VALUE=DATE-TIME:20201103T115959
+SUMMARY:Plan of Study Sunday\, October 18 @ 11:59pm EST 6 
+DTSTART;VALUE=DATE-TIME:20201018T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Op
- tions Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PE
- ER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Pa
- per – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE S
- UNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Paper – Due by Tu
- esday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 
- @ 10:00pm\nTreatment Options Critical Paper – Due by Tuesday\, December 
- 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatm
- ent Options Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNI
- T 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Criti
- cal Paper – Due by Tuesday\, December 8th @ 10:00pm 
-DTSTART;VALUE=DATE-TIME:20201208T115959
+SUMMARY:Plan of Study Sunday\, October 18 @ 11:59pm EST 6 
+DTSTART;VALUE=DATE-TIME:20201001T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Op
- tions Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PE
- ER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Pa
- per – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE S
- UNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Paper – Due by Tu
- esday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 
- @ 10:00pm\nTreatment Options Critical Paper – Due by Tuesday\, December 
- 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatm
- ent Options Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNI
- T 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Criti
- cal Paper – Due by Tuesday\, December 8th @ 10:00pm 
-DTSTART;VALUE=DATE-TIME:20201208T115959
+SUMMARY:Time Management Evaluation (Part 1) Sunday\, September 6 @ 11:59pm
+  EST 6 
+DTSTART;VALUE=DATE-TIME:20200906T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Op
- tions Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PE
- ER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Pa
- per – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE S
- UNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Paper – Due by Tu
- esday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 
- @ 10:00pm\nTreatment Options Critical Paper – Due by Tuesday\, December 
- 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatm
- ent Options Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNI
- T 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Criti
- cal Paper – Due by Tuesday\, December 8th @ 10:00pm 
-DTSTART;VALUE=DATE-TIME:20201208T115959
+SUMMARY:Time Management Evaluation (Part 2) Sunday\, September 27 @ 11:59p
+ m EST 6 
+DTSTART;VALUE=DATE-TIME:20200927T115959
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Op
- tions Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PE
- ER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Pa
- per – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE S
- UNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Paper – Due by Tu
- esday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 
- @ 10:00pm\nTreatment Options Critical Paper – Due by Tuesday\, December 
- 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatm
- ent Options Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNI
- T 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Criti
- cal Paper – Due by Tuesday\, December 8th @ 10:00pm 
-DTSTART;VALUE=DATE-TIME:20201208T115959
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Op
- tions Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PE
- ER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Pa
- per – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE S
- UNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Paper – Due by Tu
- esday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 
- @ 10:00pm\nTreatment Options Critical Paper – Due by Tuesday\, December 
- 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatm
- ent Options Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNI
- T 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Criti
- cal Paper – Due by Tuesday\, December 8th @ 10:00pm 
-DTSTART;VALUE=DATE-TIME:20201208T115959
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Op
- tions Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PE
- ER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Pa
- per – Due by Tuesday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE S
- UNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Critical Paper – Due by Tu
- esday\, December 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 
- @ 10:00pm\nTreatment Options Critical Paper – Due by Tuesday\, December 
- 8th @ 10:00pm UNIT 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatm
- ent Options Critical Paper – Due by Tuesday\, December 8th @ 10:00pm UNI
- T 3 PEER RESPONSE DUE SUNDAY DECEMBER 6 @ 10:00pm\nTreatment Options Criti
- cal Paper – Due by Tuesday\, December 8th @ 10:00pm 
-DTSTART;VALUE=DATE-TIME:20201208T115959
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Finals Wk Finals Wk FINAL EXAM (Ch. 11-16 + Cumulative Material) F
- INAL EXAM (Ch. 11-16 + Cumulative Material) Sec 1 (10:30) – Thursday\, D
- ecember 10th\nSec 2 (11:30) – Monday\, December 7th  Sec 1 (10:30) – T
- hursday\, December 10th\nSec 2 (11:30) – Monday\, December 7th  
-DTSTART;VALUE=DATE-TIME:20201116T115959
+SUMMARY:Time Management Evaluation (Part 2) Sunday\, September 27 @ 11:59p
+ m EST 6 
+DTSTART;VALUE=DATE-TIME:20200902T115959
 END:VEVENT
 END:VCALENDAR
