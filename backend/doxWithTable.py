@@ -1,3 +1,4 @@
+import re
 from docx import Document
 from dateutil.parser import parse
 from datetime import datetime
@@ -17,11 +18,12 @@ def is_date(string, fuzzy=False):
     except ValueError:
         return False
 
-
+#Multiple Regex Expressions
+#User Input?
 
 
 # Creates and reads a docx file
-document = Document("docWithTableTests/cs191.docx")
+document = Document("docWithTableTests/412.docx")
 
 #Stores rows and columns of a table
 data = []
@@ -47,24 +49,30 @@ datesArray = []
 
 #Iterates through rows and columns, if it encounters a date, adds it to data array
 
+regArray = ["Jan[^0-9]+[0-2][0-9]" , "Feb[^0-9]+[0-2][0-9]" , "Mar[^0-9]+[0-2][0-9]" , "Apr[^0-9]+[0-2][0-9]" , "May[^0-9]+[0-2][0-9]" , "Jun[^0-9]+[0-2][0-9]" , "Jul[^0-9]+[0-2][0-9]" , "Aug[^0-9]+[0-2][0-9]" , "Sep[^0-9]+[0-2][0-9]" , "Oct[^0-9]+[0-2][0-9]" , "Nov[^0-9]+[0-2][0-9]" , "Dec[^0-9]+[0-2][0-9]" , 
+    "Jan[^0-9]+[0-9]" , "Feb[^0-9]+[0-9]" , "Mar[^0-9]+[0-9]" , "Apr[^0-9]+[0-9]" , "May[^0-9]+[0-9]" , "Jun[^0-9]+[0-9]" , "Jul[^0-9]+[0-9]" , "Aug[^0-9]+[0-9]" , "Sep[^0-9]+[0-9]" , "Oct[^0-9]+[0-9]" , "Nov[^0-9]+[0-9]" , "Dec[^0-9]+[0-9]" ,
+    "[0-1][0-9][/][0-2][0-9]" , "[0-1][0-9][/][0-9]" , "[0-9][/][0-2][0-9]" , "[0-9][/][0-9]" , "[0-1][0-9][-][0-2][0-9]" , "[0-1][0-9][-][0-9]" , "[0-9][-][0-2][0-9]" , "[0-9][-][0-9]"]
+
 for i in data:
     for j in range(len(i)):
-        #Checks if j is a date and not numeric, used to prevent integers, such as 1, to pass as dates
-        if(is_date(i[j]) and i[j].isnumeric() == False):
-            #Gets sublist from j to the end, ensures that the date will be the first index
-            datesArray.append(i[j:])
-            break
-        #Splits j into a word array seperated by spaces
-        wordArray = i[j].split(" ")
-        for k in wordArray: 
-            #Checks if k is a date and not numeric, used to prevent integers from passing
-            if(is_date(k) and k.isnumeric() == False):
-                #Gets sublist from j to the end, ensures that the date will be the first index
-                datesArray.append((k,) + i[j:])
+        #Checks if j is a date and not numeric, used to prevent integers, such as 1, to pass as dates            
+       
+        for u in range(len(regArray)):
+            regDate = re.findall(regArray[u],i[j])
+            if (regDate != None):
+                #Gets sublist from j to the end, ensures that the date will be the first indexreg
+                for reg in regDate:
+                    if(u < 24 or is_date(reg)):
+                        datesArray.append((reg,) + i[j:])
+                        datesArray.append((reg,) + i[j:])
+                        break
+                else:
+                    continue
                 break
         #Breaks out of inner 2 loops if the prior if statement evaulates
         else:
             continue
         break
+        
 
 print("test")
