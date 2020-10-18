@@ -61,6 +61,8 @@ def regexGetList(assignment,index):
 #Parses a date from Month... Day format.
 def parseDate(date): 
     date = date.split(" ")
+    if(len(date) == 1):
+        date = [date[0],"5"]
     if(date[0].startswith("Jan")):
         return str("1/" + date[1])
     elif(date[0].startswith("Feb")):
@@ -371,8 +373,10 @@ def convertToICS(datesArray):
         descriptionTotal = ""
 
         for j in descriptions[i]:
-            descriptionTotal += str(j) + " "
-
+            if j != None:    
+                descriptionTotal += str(j) + " "
+                
+        descriptionTotal.replace("nan","")
         descriptionTotal.replace("\n","").replace("\r","")
 
         event.add('summary',descriptionTotal)
@@ -387,9 +391,10 @@ def convertToICS(datesArray):
     f.write(cal.to_ical())
     f.close()
 
-
+def func():
+    main()
 def main():
-    
+    print("The main method is running")
     #Gets User Input From Website(Will be edited afterwards)
     # File name will be uploaded_file.pdf or .doc or .docx
 
@@ -402,7 +407,8 @@ def main():
     for i in range(len(onlyfiles)):
         if "uploaded_file" in onlyfiles[i]:
             file = onlyfiles[i]
-            
+
+
     print(file)
 
 
