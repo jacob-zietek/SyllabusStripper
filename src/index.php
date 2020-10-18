@@ -32,6 +32,8 @@
 <div class = "overlay" id="overlay1">
     <div class = "gui" id = "gui">
         <a name = "cancel" id = "cancel" onclick = "off(); return false" href = "">X</a>
+        <p><b>The Sons of Kedar <br> <br> All other forms of social media are irrelevant, so please follow our LinkedIn accounts!</b></p>
+
     </div>
     </form>
 </div>
@@ -52,38 +54,15 @@
 
 
 <p id="entertext"><b>Please Upload Your PDF Below</b></p>
-<form enctype="multipart/form-data" method="post">
-    <input type="file" id="pdfFile" name="pdfFile" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+<form enctype="multipart/form-data" action="/upload" method="post">
+    <input type="file"  id="file" name="file" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
     <br>
     <br>
     <br>
     <input type="submit" id="submit" name="submit">
+
 </form>
 
 </body>
 </html>
-<?php
-    if(isset($_POST['submit'])) {
-        if ($_FILES['pdfFile']['type'] == "application/pdf" || $_FILES['pdfFile']['type'] == "application/msword" || $_FILES['pdfFile']['type'] == "application/vnd.openxmlformats-officedocument.wordprocessingml.document") {
-            $source_file = $_FILES['pdfFile']['tmp_name'];
-            $dest_file = "../backend/userfile";
 
-            if (file_exists($dest_file)) {
-                echo "The file name already exists!!";
-            } else {
-                move_uploaded_file($source_file, $dest_file)
-                or die ("Error!!");
-                if ($_FILES['pdfFile']['error'] == 0) {
-                    echo "<p id='confirm'>PDF file uploaded successfully!</p>";
-                    echo "<p id='confirm2'>Starting Download...</p>";
-                    echo "<script> log() </script>";
-                    echo "<a id='calendarLink'>Calendar File!</a>";
-                }
-                else {
-                    echo "<p id='confirm'>Unsuccessful file upload! Please try again!</p>";
-                    echo "<p id='confirm2'></p>";
-                }
-            }
-        }
-    }
-?>
