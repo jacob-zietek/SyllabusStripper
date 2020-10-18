@@ -1,5 +1,5 @@
 import Syllabus1
-
+#make sure to change which python file to import. The imported file is the one with taking the input and make a ics file from it.
 
 from flask import Flask
 app = Flask(__name__)
