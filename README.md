@@ -48,9 +48,10 @@ We were able to get a working syllabus extractor and web app for the two most co
 
 
 ## What's next for Syllabus Stripper
+Apply more effective models to get a lower error on extracting events
+Incorporate ML into the extraction process
+Support more niche file types
+Automatically export to an online calendar instead of leaving that to the user
+Incorporate user input to set up things like recurrent events or things our model could have missed
+Polish the main website
 
-[Talk about future plans and how we can improve upon this project further]
-
-- Apply more effective models to get a lower error on extracting events
-- Support more file types?
-- Idk add more later lul
