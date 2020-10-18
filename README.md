@@ -35,7 +35,7 @@ Inconsistent formatting for pdfs meant we needed a broad reaching solution to pa
 Integrating the front end to the back end also had a host of other problems. None of us were experienced in doing this, and the last few hours was spent fighting the smallest errors.
 
 ## Accomplishments that we're proud of
-[Do later]
+We were able to get a working syllabus extractor and web app for the two most common file types! LFG!
 
 ## What we learned
 **Arjun**:  I learned a LOT through this experience! Usually, I am the type of person that has ideas and starts projects easily, but when large errors occur that cause me to scale-down my ideas, I get discouraged easily. Participating in this hackathon taught me to become more tenacious when dealing with coding projects and to have the patience to push onwards and seek help even when things may seem impossible. On a more technical note, I learned a lot more about HTML and CSS, and I hosted a new server than what I'm used to. I usually use Apache and PHP when hosting servers, but today I got to experience working with the python language and utilizing Spyder to handle my pip imports while I work on my project. Furthermore, we hosted using Flask, which I was completely unfamiliar with until now. Finally, I gained a lot more experience in python as I was actually able to work on a project with many modules involved.
