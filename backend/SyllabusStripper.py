@@ -3,7 +3,7 @@ import PyPDF2
 import textract
 import pandas as pd
 
-from docx import Document
+#from docx import Document
 from dateutil.parser import parse
 from datetime import datetime
 from icalendar import Calendar, Event
@@ -108,10 +108,92 @@ def pdfWithTable(dfOfInterest):
 
     #Iterates through rows and columns, if it encounters a date, adds it to data array
     
+    #print(datesArray[0])
+    
     return datesArray
 
 
+def pdfWithoutTable(file):
+    pdfFileObj = open(file,'rb')
 
+    pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+    
+    num_pages = pdfReader.numPages
+    count = 0
+    text = ""
+    
+    
+    while count < num_pages:
+        pageObj = pdfReader.getPage(count)
+        count += 1
+        text += pageObj.extractText()
+    
+    if text != "":
+       text = text
+    
+    text = text.replace("\r", "")
+    
+    text = text.replace("\n", "")
+    
+    textArray = text.split(" ")
+    
+    dates = []
+    
+    for i in range(len(regArray)):
+        shit = re.search(regArray[i], text)
+        if shit != None:
+            dates.append(shit)
+      
+    '''
+    print(dates[0].span())
+    print(text[dates[0].span()[0]:dates[0].span()[1]])
+    
+    print(dates[1].span())
+    print(text[dates[1].span()[0]:dates[1].span()[1]])
+    '''
+    
+    
+    filteredDatesAndIndex = []
+    
+    for i in range(len(dates)):
+        if dates[i].span()[1] - dates[i].span()[0] < 15:
+            filteredDatesAndIndex.append([text[dates[i].span()[0]:dates[i].span()[1]], dates[i].span()])
+    
+    for i in range(len(filteredDatesAndIndex)):
+        #print(filteredDatesAndIndex[i][0])
+        filteredDatesAndIndex[i][0] = parseDate(filteredDatesAndIndex[i][0])
+        
+    dates = []
+    
+    for i in range(len(filteredDatesAndIndex)):
+        if filteredDatesAndIndex[i][0] != None:
+            dates.append(filteredDatesAndIndex[i])
+            
+    descriptions = []
+    
+    for i in range(len(dates)):
+        endOfDate = dates[i][1][1]
+        descriptions.append(text[endOfDate+1:endOfDate + 100])
+    
+    '''
+    currentYear = datetime.now().year
+    
+    for i in range(len(dates)):
+        if("-" in dates[i][0]):
+            dates[i][0] = dates[i][0].replace("-","/")
+        dates[i][0] = str(currentYear) + "/" +  dates[i][0]
+        dates[i][0] = parse(dates[i][0])
+    '''
+        
+    datesArray = []
+    
+    for i in range(len(dates)):
+        datesArray.append([dates[i][0], descriptions[i]])
+    
+        
+    return datesArray
+    
+    
 
 
 def pdf(file):
@@ -136,7 +218,7 @@ def pdf(file):
     if(largestSize > 7):
         return pdfWithTable(dfOfInterest)
     else:
-        return pdfWithoutTable()
+        return pdfWithoutTable(file)
 
 
 def convertToICS(datesArray):
@@ -216,7 +298,7 @@ def convertToICS(datesArray):
 def main():
 
     #Gets User Input From Website(Will be edited afterwards)
-    file = "anotherTable.pdf"
+    file = "pdfNoTable.pdf"
 
     fileType = file[file.index("."):]
 

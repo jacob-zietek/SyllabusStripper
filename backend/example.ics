@@ -1,2 +1,52 @@
 BEGIN:VCALENDAR
+BEGIN:VEVENT
+SUMMARY:Ð Aug. 28  Module 1 .................................... Course I
+ ntroduction   Module 2 ........... 
+DTSTART;VALUE=DATE-TIME:20200824T115959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Module 5 .................................... Sedimentary Rocks: I
+ nterpreting the Geologic Past Mod 
+DTSTART;VALUE=DATE-TIME:20200911T115959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ð Oct. 16 Module 13 .................................. Tectonics 
+ and the Ocean: Ridges\, Trenches\, a 
+DTSTART;VALUE=DATE-TIME:20201012T115959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Module 21 .................................. Climate III: Are Huma
+ ns Influencing EarthÕs Climate? M 
+DTSTART;VALUE=DATE-TIME:20201113T115959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Final Exam ................................ Cumulative Exam For th
+ e Course  Covid-19 Related Statem 
+DTSTART;VALUE=DATE-TIME:20201211T115959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY: Ð Aug. 28  Module 1 .................................... Course 
+ Introduction   Module 2 .......... 
+DTSTART;VALUE=DATE-TIME:20200802T115959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Module 3 .................................... Minerals: The Buildi
+ ng Blocks of the Solid Earth Modu 
+DTSTART;VALUE=DATE-TIME:20200904T115959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Module 11 .................................. Earthquakes: Sudden E
+ vents\, Tectonic Consequences Modu 
+DTSTART;VALUE=DATE-TIME:20201002T115959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ð Nov. 6 Module 19 .................................. Climate I: 
+ Explaining the EarthÕs Modern Clim 
+DTSTART;VALUE=DATE-TIME:20201102T115959
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Module 26 .................................. Life on Mars: What Ma
+ kes a Habitable Planet? Module 27 
+DTSTART;VALUE=DATE-TIME:20201204T115959
+END:VEVENT
 END:VCALENDAR
