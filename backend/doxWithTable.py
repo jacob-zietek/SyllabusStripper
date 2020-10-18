@@ -50,7 +50,19 @@ def parseDate(date):
     elif(date[0].startswith("Dec")):
         return str("12/" + date[1])
 
-
+def regexGetList(regexArray,assignment,index):
+    for u in range(len(regArray)):
+            regDate = re.findall(regArray[u],assignment[index])
+            if (regDate != None):
+                #Gets sublist from j to the end, ensures that the date will be the first indexreg
+                for reg in regDate:
+                    #if u is 24, it is a date written in Month DD, so it changes that to MM/DD
+                    if(u < 24):
+                        return [(parseDate(reg),) + assignment[:index] + assignment[index:]]
+                    elif(is_date(reg)): #Regular Output
+                        return [(reg,) + assignment[:index] + assignment[index:]]
+    return None
+    
 #Multiple Regex Expressions
 #User Input?
 
@@ -93,25 +105,11 @@ for i in data:
     for j in range(len(i)):
                   
         #checks if there is a valid instance of reg array in i[j]
-        for u in range(len(regArray)):
-            regDate = re.findall(regArray[u],i[j])
-            if (regDate != None):
-                #Gets sublist from j to the end, ensures that the date will be the first indexreg
-                for reg in regDate:
-                    #if u is 24, it is a date written in Month DD, so it changes that to MM/DD
-                    if(u < 24):
-                        datesArray.append((parseDate(reg),) + i[:j] + i[j:])
-                    elif(is_date(reg)): #Regular Output
-                        datesArray.append((reg,) + i[:j] + i[j:])
-                        break
-    
-                else:
-                    continue
-                break
+        dateInfo = regexGetList(regArray,i,j)
+        if(dateInfo != None):
+            datesArray.append(dateInfo)
+            break
         #Breaks out of inner 2 loops if the prior if statement evaulates
-        else:
-            continue
-        break
         
 
 dates = []
