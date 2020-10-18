@@ -66,6 +66,15 @@ def regexGetList(regexArray,assignment,index):
                         return [(reg,) + assignment[:index] + assignment[index:]]
     return None
 
+import docx
+
+def getText(filename):
+    doc = docx.Document(filename)
+    fullText = []
+    for para in doc.paragraphs:
+        fullText.append(para.text)
+    return '\n'.join(fullText)
+
 #Stores an array of regs
 #Quite possibly the worst line of code I have ever written
 #Is there a better way to do this, yes? Do I know how, no? Could I learn how? Yes. Do I care? No.
@@ -75,24 +84,9 @@ regArray = ["Jan[^0-9]+[0-3][0-9]" , "Feb[^0-9]+[0-2][0-9]" , "Mar[^0-9]+[0-3][0
 # !!! Note: This was Bryan's code, not mine. If you are looking into hiring me
 # for a job I'm sorry.
 
-filename = 'pdfNoTable.pdf'
 
-pdfFileObj = open(filename,'rb')
+text = getText("docxNoTable.docx")
 
-pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
-
-num_pages = pdfReader.numPages
-count = 0
-text = ""
-
-
-while count < num_pages:
-    pageObj = pdfReader.getPage(count)
-    count += 1
-    text += pageObj.extractText()
-
-if text != "":
-   text = text
 
 text = text.replace("\r", "")
 

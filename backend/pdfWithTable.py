@@ -8,8 +8,6 @@ from datetime import datetime
 # This file will be able to take a pdf file and take tables out for 
 # processing later
 
-
-
 import tabula
 
 def is_date(string, fuzzy=False):
