@@ -61,9 +61,9 @@ def regexGetList(regexArray,assignment,index):
                 for reg in regDate:
                     #if u is 24, it is a date written in Month DD, so it changes that to MM/DD
                     if(u < 24):
-                        return [(parseDate(reg),) + assignment[:index] + assignment[index:]]
+                        return list((parseDate(reg)),) + list(assignment[:index]) + list(assignment[index:])
                     elif(is_date(reg)): #Regular Output
-                        return [(reg,) + assignment[:index] + assignment[index:]]
+                        return list((reg,)) + list(assignment[:index]) + list(assignment[index:])
     return None
 
 import docx
@@ -80,7 +80,7 @@ def getText(filename):
 #Is there a better way to do this, yes? Do I know how, no? Could I learn how? Yes. Do I care? No.
 regArray = ["Jan[^0-9]+[0-3][0-9]" , "Feb[^0-9]+[0-2][0-9]" , "Mar[^0-9]+[0-3][0-9]" , "Apr[^0-9]+[0-3][0-9]" , "May[^0-9]+[0-3][0-9]" , "Jun[^0-9]+[0-3][0-9]" , "Jul[^0-9]+[0-3][0-9]" , "Aug[^0-9]+[0-3][0-9]" , "Sep[^0-9]+[0-3][0-9]" , "Oct[^0-9]+[0-3][0-9]" , "Nov[^0-9]+[0-3][0-9]" , "Dec[^0-9]+[0-3][0-9]" , 
     "Jan[^0-9]+[0-9]" , "Feb[^0-9]+[0-9]" , "Mar[^0-9]+[0-9]" , "Apr[^0-9]+[0-9]" , "May[^0-9]+[0-9]" , "Jun[^0-9]+[0-9]" , "Jul[^0-9]+[0-9]" , "Aug[^0-9]+[0-9]" , "Sep[^0-9]+[0-9]" , "Oct[^0-9]+[0-9]" , "Nov[^0-9]+[0-9]" , "Dec[^0-9]+[0-9]" ,
-    "[0-1][0-9][/][0-3][0-9]" , "[0-1][0-9][/][0-9]" , "[0-9][/][0-3][0-9]" , "[0-9][/][0-9]" , "[0-1][0-9][-][0-3][0-9]" , "[0-1][0-9][-][0-9]" , "[0-9][-][0-3][0-9]" , "[0-9][-][0-9]"]
+    "[0-1][0-9][/][0-3][0-9]" , "[0-1][0-9][/][0-9]" , "[0-9][/][0-3][0-9]" , "[0-9][/][0-9]" ]
 # !!! Note: This was Bryan's code, not mine. If you are looking into hiring me
 # for a job I'm sorry.
 
@@ -90,17 +90,24 @@ text = getText("docxNoTable.docx")
 
 text = text.replace("\r", "")
 
-text = text.replace("\n", "")
 
-textArray = text.split(" ")
+textArray = text.split("\n")
 
-dates = []
+for i in range(len(textArray)):
+    textArray[i] = textArray[i].split(" ")
+datesArray = []
 
-for i in range(len(regArray)):
-    shit = re.search(regArray[i], text)
-    if shit != None:
-        dates.append(shit)
-  
+for i in textArray:
+    for j in range(len(i)):
+    #checks if there is a valid instance of reg array in i[j]
+        dateInfo = regexGetList(regArray,i,j)
+        if(dateInfo != None):
+            datesArray.append(dateInfo)
+            break
+
+    #Iterates through rows and columns, if it encounters a date, adds it to data array
+    
+
 '''
 print(dates[0].span())
 print(text[dates[0].span()[0]:dates[0].span()[1]])
@@ -110,8 +117,9 @@ print(text[dates[1].span()[0]:dates[1].span()[1]])
 '''
 
 
-filteredDatesAndIndex = []
+#filteredDatesAndIndex = []
 
+'''
 for i in range(len(dates)):
     if dates[i].span()[1] - dates[i].span()[0] < 15:
         filteredDatesAndIndex.append([text[dates[i].span()[0]:dates[i].span()[1]], dates[i].span()])
@@ -141,13 +149,39 @@ for i in range(len(dates)):
     dates[i][0] = str(currentYear) + "/" +  dates[i][0]
     dates[i][0] = parse(dates[i][0])
     
-    
+'''
+
+dates = []
+descriptions = []
+
+# Assuming the description is one index over to the right of the date
+# (this is a valid assumption in something like a table) we can update 
+# the dates and descriptions arrays appropriately
+
+for i in range(len(datesArray)):
+    dates.append(datesArray[i][0])
+    descriptions.append(datesArray[i][1:])
+
+
+# This cleans up the data a little bit, it removes the end from - onward
+# and replaces it with the current year. This should ensure it works for
+# any semester. It then runs it through dateutil's parse function to standardize
+# the layout of the data, it should be 'YYYY-MM-DD HH:MM:SS'
+
+currentYear = datetime.now().year
+
+for i in range(len(dates)):
+    if("-" in dates[i]):
+        dates[i] = dates[i].replace("-","/")
+    dates[i] = str(currentYear) + "/" +  str(dates[i])
+    dates[i] = parse(dates[i])
+
     
 cal = Calendar()
 
 for i in range(len(dates)):
     event = Event() # Starts a new event
-    dateComponents = str(dates[i][0]).split("-")
+    dateComponents = str(dates[i]).split("-")
     year = int(dateComponents[0])
     month = int(dateComponents[1])
     day = int(dateComponents[2][:2])
@@ -163,11 +197,13 @@ for i in range(len(dates)):
     event.add('dtstart', datetime(year, month, day, hour, minutes, seconds))
     
     # Adds description
-    descriptionTotal = descriptions[i]
+    descriptionTotal = ""
 
+    for j in descriptions[i]:
+        descriptionTotal += str(j) + " "
     
 
-    event.add('summary',descriptionTotal)
+    event.add('summary',descriptionTotal.replace("\n","").replace("\r",""))
     
     # Can add more attributes to every event using afformentioned docs
     
@@ -178,6 +214,9 @@ for i in range(len(dates)):
 f = open(os.path.join('example.ics'), 'wb')
 f.write(cal.to_ical())
 f.close()
+
+
+
 
 
 
