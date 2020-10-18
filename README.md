@@ -27,14 +27,17 @@ We also used widely available Python libraries such as [Insert stuff here] to ma
 
 [Do this later retrospectively]
 
-- It's not inherently obvious how to take data from PDFs, docx, and doc and extract events out of it
-- etc...
+It's not inherently obvious how to take data from PDFs, docx, and doc and extract events out of it. We spent a large portion of the hackathon getting from this pipeline to work effectively. A lot of time was sunk into:
+
+Parsing through different file types differently
+Creating a robust date detection system for detecting and extracting events (Thanks regex !)
+Integrating the front end to the back end also had a host of other problems. None of us were experienced in doing this, as...
 
 ## Accomplishments that we're proud of
 [Do later]
 
 ## What we learned
-**Arjun**: I learned
+**Arjun**:  I learned a LOT through this experience! Usually, I am the type of person that has ideas and starts projects easily, but when large errors occur that cause me to scale-down my ideas, I get discouraged easily. Participating in this hackathon taught me to become more tenacious when dealing with coding projects and to have the patience to push onwards and seek help even when things may seem impossible. On a more technical note, I learned a lot more about HTML and CSS, and I hosted a new server than what I'm used to. I usually use Apache and PHP when hosting servers, but today I got to experience working with the python language and utilizing Spyder to handle my pip imports while I work on my project. Furthermore, we hosted using Flask, which I was completely unfamiliar with until now. Finally, I gained a lot more experience in python as I was actually able to work on a project with many modules involved.
 
 **Bryan**:  
 
