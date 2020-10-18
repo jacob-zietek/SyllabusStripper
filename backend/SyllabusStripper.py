@@ -10,6 +10,10 @@ from icalendar import Calendar, Event
 
 import tempfile, os
 
+from os import listdir
+
+from os.path import isfile, join
+
 import tabula
 
 
@@ -298,7 +302,23 @@ def convertToICS(datesArray):
 def main():
 
     #Gets User Input From Website(Will be edited afterwards)
-    file = "pdfNoTable.pdf"
+    # File name will be uploaded_file.pdf or .doc or .docx
+    
+    onlyfiles = [f for f in listdir("./") if isfile(join("./", f))]
+    
+    file = None
+    
+    print(onlyfiles)
+    
+    for i in range(len(onlyfiles)):
+        if "uploaded_file" in onlyfiles[i]:
+            file = onlyfiles[i]
+            
+    print(file)
+            
+    if file is None:
+        return
+
 
     fileType = file[file.index("."):]
 
